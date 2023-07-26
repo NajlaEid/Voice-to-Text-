@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>speech to text</title>
+    <style>
+        #textarea {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            font-family: cursive;
+        }
+        #button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #start {
+            background-color: lightgreen;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        #start.clicked {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body style="background-color:aliceblue">
+	
+    <h2>Converting speech to text</h2>
+   <form method="post" action="store_sentence.php">
+    <textarea id="textarea" name="sentence" cols="50" rows="15"></textarea>
+    <div id="button-container">
+        <button id="start" type="submit">Start Listening</button>
+    </div>
+</form>
+	<script src="voice to text js.js"></script>
+</body>
+</html>
+
+
+
